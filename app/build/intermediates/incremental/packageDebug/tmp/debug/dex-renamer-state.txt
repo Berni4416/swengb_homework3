@@ -1,7 +1,7 @@
-#Sun Feb 16 20:29:06 CET 2020
-base.0=C\:\\Users\\berna\\Documents\\windisch\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Fri Mar 06 12:29:08 CET 2020
+base.0=C\:\\Users\\berna\\Documents\\windischhomework3\\swengb_homework3\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\berna\\Documents\\windisch\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\Users\\berna\\Documents\\windischhomework3\\swengb_homework3\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
