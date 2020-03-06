@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import kotlinx.android.synthetic.main.activity_list_node.*
 import java.util.*
@@ -32,7 +33,7 @@ class ListNode : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_node)
+        setContentView(R.layout.activity_list_node)
 
         val sharedPreferences = getSharedPreferences(packageName, Context.MODE_PRIVATE)
         val token = sharedPreferences.getString(USER_TOKEN, null)
@@ -50,7 +51,7 @@ class ListNode : AppCompatActivity() {
                     Log.e("Error", it)
                     noteAdapter.updateList(NoteRepository.getNoteall(this))
                 })
-            note_recycler_view.layoutManager = StaggeredGridLayoutManager(2,1)
+            note_recycler_view.layoutManager = StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL)
             note_recycler_view.adapter = noteAdapter
 
         }
@@ -83,7 +84,7 @@ class ListNode : AppCompatActivity() {
         Log.e("ACTIVITY_R","RESULTED Activity")
         if (requestCode == EXTRA_ADDED_RESULT  && resultCode == Activity.RESULT_OK){
             noteAdapter.updateList(NoteRepository.getNoteall(this))
-            note_recycler_view.layoutManager = StaggeredGridLayoutManager(2,1)
+            note_recycler_view.layoutManager = StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL)
             note_recycler_view.adapter = noteAdapter
         }
     }
